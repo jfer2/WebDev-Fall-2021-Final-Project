@@ -6,20 +6,13 @@ const navSlide = () => {
     navMenu.addEventListener('click', () => {
 
         nav.classList.toggle('nav-active');
-
-        // for (line of lines) {
-        //     line.style.display = 'none';
-        // }
-
         navMenu.classList.toggle('navMenu-active');
 
-        // for (line of lines) {
-        //     line.style.display = 'block';
-        // }
     });
 
     nav.addEventListener('click', () => {
-        // nav.classList.toggle('nav-active');
+        navMenu.classList.toggle('navMenu-active');
+        nav.classList.toggle('nav-active');
     });
 
     window.addEventListener('resize', () => {
