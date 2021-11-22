@@ -24,12 +24,11 @@ const navSlide = () => {
 
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 769) {
-            console.log('class name: ' + nav.classList);
             if (nav.classList.contains('nav-list') && nav.classList.contains('nav-active')) {
                 nav.classList.toggle('nav-active');
-                if (navMenu.classList.contains('navMenu-active') && navMenu.classList.contains('nav-menu')) {
-                    navMenu.toggle('navMenu-active');
-                }
+            }
+            if (navMenu.classList.contains('nav-menu') && navMenu.classList.contains('navMenu-active')) {
+                navMenu.classList.toggle('navMenu-active');
             }
         }
     });

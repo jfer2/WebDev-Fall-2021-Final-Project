@@ -65,7 +65,6 @@ nav {
 
 .nav-menu {
     display: none;
-    
 }
 
 @for $i from 1 through 3 {
@@ -138,7 +137,6 @@ nav {
         width: 10vw;
         height: auto;
         margin-right: 40px;
-
     }
 
     .nav-active {
@@ -146,9 +144,14 @@ nav {
         width: 100%;
     }
 
-    .navMenu-active:after {
-        color: blue;
+    .navMenu-active::after{
+        display: flex;
+        color: white;
         content: '\2715';
+        font-size: 48px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .navMenu-active > .line {
         display: none;

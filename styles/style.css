@@ -182,9 +182,20 @@ nav {
             transform: translateX(0%);
     width: 100%;
   }
-  .navMenu-active:after {
-    color: blue;
+  .navMenu-active::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
     content: '\2715';
+    font-size: 48px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navMenu-active > .line {
     display: none;
