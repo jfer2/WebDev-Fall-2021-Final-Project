@@ -27,9 +27,20 @@ const navSlide = () => {
     });
 };
 
+const adjustMainContentToWindowHeight = () => {
+    // const mainContentElement = document.querySelector('.main-content'); 
+    window.addEventListener('resize', () => {
+        if (window.innerHeight <= 768) {
+            document.querySelector('.main-content').style.backgroundColor = 'whitesmoke';
+            document.querySelector('.main-content').height = window.innerHeight;
+        }
+    });
+};
+
 
 document.addEventListener("DOMContentLoaded", () => {
     navSlide();
+    adjustMainContentToWindowHeight();
 });
 
 
