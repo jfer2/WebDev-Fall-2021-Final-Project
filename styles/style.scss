@@ -25,12 +25,13 @@ p {
 nav {
     display: flex;
     position: fixed;
-    padding-left: 10px;
-    padding-right: 10px;
     top: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 60vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
     background-color: $nav-black;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 4em;
     letter-spacing: 2px;
@@ -49,7 +50,8 @@ nav {
     color: white;
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    padding-right: 2em;
+    justify-content: flex-end;
     margin-left: 20px;
     width: 60%;
 }
@@ -108,6 +110,14 @@ main {
         border: 1px solid white;
         border-radius: 20px;
         margin: 9px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    nav {
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }
 

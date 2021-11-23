@@ -25,14 +25,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  padding-left: 10px;
-  padding-right: 10px;
   top: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   background-color: #181818;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,8 +64,10 @@ nav {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-right: 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: 20px;
   width: 60%;
 }
@@ -132,6 +135,14 @@ main {
   border: 1px solid white;
   border-radius: 20px;
   margin: 9px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  nav {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
