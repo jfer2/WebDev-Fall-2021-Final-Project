@@ -97,19 +97,6 @@ nav {
     background-color: bisque;
 }
 
-@for $i from 1 through 3 {
-    .nav-menu>div:nth-child(#{$i}) {
-
-        $width: percentage((80 - ($i)) / 100);
-        width: $width;
-
-        height: .2em;
-        background-color: white;
-        border: 1px solid white;
-        border-radius: 20px;
-        margin: 9px;
-    }
-}
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     nav {
@@ -145,10 +132,25 @@ nav {
         min-width: 3em;
         padding-right: 6%;
         height: auto;
+        text-align: center;
+
     }
+    @for $i from 1 through 3 {
+    .nav-menu>div:nth-child(#{$i}) {
+
+        $width: percentage((80 - ($i)) / 100);
+        width: $width;
+
+        height: .2em;
+        background-color: white;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 0.5em;
+    }
+}
 
     .logo > h4 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
 
