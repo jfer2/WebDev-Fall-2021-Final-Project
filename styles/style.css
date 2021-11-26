@@ -3,7 +3,6 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
 }
 
@@ -27,9 +26,9 @@ nav {
   position: fixed;
   top: 0;
   margin: 0 auto;
-  width: 60vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  width: 56vw;
+  padding-left: 22vw;
+  padding-right: 22vw;
   background-color: #181818;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -54,7 +53,7 @@ nav {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  font-size: 24px;
+  font-size: 22px;
   color: white;
 }
 
@@ -86,19 +85,24 @@ nav {
   display: none;
 }
 
-main {
+.main-content {
   height: 100vh;
   width: 100vw;
   margin: 0 auto;
   margin-top: 4em;
-}
-
-.main-content {
-  height: 100vh;
-  margin: 0 auto;
+  margin-bottom: 0em;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: whitesmoke;
+  background-color: silver;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background-color: silver;
+  height: auto;
 }
 
 .content-item {
@@ -111,8 +115,8 @@ main {
 }
 
 .nav-menu > div:nth-child(1) {
-  width: 77%;
-  height: 2px;
+  width: 79%;
+  height: .2em;
   background-color: white;
   border: 1px solid white;
   border-radius: 20px;
@@ -120,8 +124,8 @@ main {
 }
 
 .nav-menu > div:nth-child(2) {
-  width: 74%;
-  height: 2px;
+  width: 78%;
+  height: .2em;
   background-color: white;
   border: 1px solid white;
   border-radius: 20px;
@@ -129,8 +133,8 @@ main {
 }
 
 .nav-menu > div:nth-child(3) {
-  width: 71%;
-  height: 2px;
+  width: 77%;
+  height: .2em;
   background-color: white;
   border: 1px solid white;
   border-radius: 20px;
@@ -139,9 +143,9 @@ main {
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   nav {
-    width: 80vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    width: 70vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
 
@@ -155,40 +159,53 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0;
     background-color: #181818;
   }
   .logo {
     width: 80%;
+    padding-left: 6%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .nav-menu {
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    min-width: 3em;
+    padding-right: 6%;
+    height: auto;
   }
   .logo > h4 {
-    font-size: 5vw;
+    font-size: 28px;
   }
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
     right: 0;
-    height: 60vh;
-    width: 95%;
+    height: 40vh;
+    width: 100%;
     top: 4em;
-    background-color: #181818;
+    background-color: #202020;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.2s ease-in;
-    transition: -webkit-transform 0.2s ease-in;
-    transition: transform 0.2s ease-in;
-    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-    opacity: 95%;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    opacity: 100%;
   }
   .nav-list > li {
     display: -webkit-box;
@@ -207,15 +224,10 @@ main {
     height: 100%;
     border: 1px solid white;
     text-align: center;
+    margin: 0;
   }
   .nav-list > li > a {
     font-size: 3vh;
-  }
-  .nav-menu {
-    display: block;
-    width: 10vw;
-    height: auto;
-    margin-right: 40px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -226,9 +238,9 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: white;
+    color: gray;
     content: '\2715';
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;

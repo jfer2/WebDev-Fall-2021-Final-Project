@@ -27,15 +27,15 @@ const navSlide = () => {
     });
 };
 
-const adjustMainContentToWindowHeight = () => {
-    // const mainContentElement = document.querySelector('.main-content'); 
-    window.addEventListener('resize', () => {
-        if (window.innerHeight <= 768) {
-            document.querySelector('.main-content').style.backgroundColor = 'whitesmoke';
-            document.querySelector('.main-content').height = window.innerHeight;
-        }
-    });
-};
+// const adjustMainContentToWindowHeight = () => {
+//     window.addEventListener('resize', () => {
+//         if (window.innerHeight <= 768) {
+//             console.log(window.innerHeight);
+//             document.querySelector('.wrapper').height = window.innerHeight;
+//             document.querySelector('.wrapper').style.backgroundColor = 'silver';
+//         }
+//     });
+// };
 
 
 document.addEventListener("DOMContentLoaded", () => {
