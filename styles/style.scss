@@ -5,7 +5,7 @@ $nav-black: #181818;
 }
 
 body {
-    // font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: whitesmoke;
 }
 
@@ -42,7 +42,8 @@ nav {
     justify-content: center;
     align-items: center;
     min-width: fit-content;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: lighter;
     color: white;
 }
 
@@ -66,6 +67,10 @@ nav {
     color: white;
 }
 
+.nav-list > li > a:hover {
+    color: gray;
+}
+
 .nav-menu {
     display: none;
 }
@@ -85,14 +90,17 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     background-color: silver;
+    width: 64vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
     height: auto;
 }
 
 .content-item {
     padding: 2em;
     margin-top: 2em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 8em;
+    margin-right: 8em;
     margin-bottom: 2em;
     background-color: bisque;
 }
@@ -100,9 +108,14 @@ nav {
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     nav {
-        width: 70vw;
+        width: 75vw;
         padding-left: 15vw;
-        padding-right: 15vw;
+        padding-right: 10vw;
+    }
+    .wrapper {
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }
 
@@ -196,7 +209,7 @@ nav {
 
     .navMenu-active::after{
         display: flex;
-        color: gray;
+        color: red;
         content: '\2715';
         font-size: 40px;
         text-align: center;
