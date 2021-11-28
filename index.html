@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Ferretti</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
@@ -41,13 +48,77 @@
         <div class="content-item projects" id="projects">
           <section>
             <h2>Projects</h2>
-            <p>[Description of 2-3 projects with GitHub links]</p>
+            <div class="projects-container">
+              <div class="project-item-1">
+                <h3>Rust Roguelike</h3>
+                <img src="images/rustacean.svg" class="project-lang-icon" />
+                <p>
+                  A Roguelike game written in the Rust programming language and
+                  built atop of the tcod library.
+                </p>
+                <img src="images/roguelike.png" id="roguelike" />
+                <a href="https://github.com/jfer2/roguelike"
+                  ><img src="images/github.svg" class="git"
+                /></a>
+              </div>
+              <div class="project-item-2">
+                <h3>Android App</h3>
+                <img
+                  src="images/android-studio.png"
+                  class="project-lang-icon"
+                />
+                <p>
+                  An appointment book application designed in Android Studio for
+                  Advanced Programming in Java.
+                </p>
+                <img src="images/appointment-book.jpg" id="appointment-book" />
+                <a
+                  href="https://github.com/jfer2/PortlandStateJavaSummer2021/tree/main/apptbook-android"
+                  ><img src="images/github.svg" class="git"
+                /></a>
+              </div>
+              <div class="project-item-3">
+                <h3>PSU-Crypt</h3>
+                <img src="images/cpp-logo.svg" class="project-lang-icon" />
+                <p>
+                  A C++ encryption program, based on Twofish and Skipjack, that
+                  encrypts plaintext ASCII characters using a Feistel strcuture
+                  for encryption.
+                </p>
+                <img src="images/feistel.png" id="feistel" />
+                <a href="https://github.com/jfer2/PSU-Crypt"
+                  ><img src="images/github.svg" class="git"
+                /></a>
+              </div>
+            </div>
           </section>
         </div>
         <div class="content-item contact" id="contact">
           <section>
-            <h2>Contact Form</h2>
-            <p>[Create a contact form here]</p>
+            <h2>Contact Me</h2>
+            <br />
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="textarea">Message</label>
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  rows="5"
+                  required="true"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </section>
         </div>
       </div>
