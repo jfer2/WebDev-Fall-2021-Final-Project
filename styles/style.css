@@ -9,6 +9,10 @@ html, body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+section > p {
+  padding: 0.5em;
+}
+
 body {
   display: block;
   min-width: 320px;
@@ -53,8 +57,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid silver;
-  padding-bottom: 3em;
+  padding-bottom: 7em;
   padding-top: 2em;
 }
 
@@ -73,12 +76,18 @@ h2 {
   width: 50%;
   padding-top: 1em;
   padding-bottom: 1em;
+  max-height: 400px;
+  max-width: 650px;
   border-radius: 22px;
 }
 
 #appointment-book {
   height: 30%;
   width: 30%;
+  min-height: 330px;
+  min-width: 140px;
+  max-height: 800px;
+  max-width: 380px;
   padding-top: 1em;
   padding-bottom: 1em;
   border-radius: 5em;
@@ -87,6 +96,10 @@ h2 {
 #feistel {
   height: 50%;
   width: 50%;
+  min-height: 330px;
+  min-width: 140px;
+  max-height: 620px;
+  max-width: 440px;
   padding-top: 1em;
   padding-bottom: 1em;
   border-radius: 3em;
@@ -397,9 +410,13 @@ h2 {
     margin-left: 0em;
   }
   .content-item {
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  [class*="project-item"] > p {
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
