@@ -45,9 +45,30 @@ const resumeItemModal = () => {
     });
 };
 
+const resumeItemInteraction = () => {
+    const item1Btn = document.querySelector('.resume-item-1');
+    const icon = document.querySelector('#longeshoreman-icon');
+    const resumeItemTitle = document.querySelector('#resume-item-1-title');
+
+    item1Btn.addEventListener('mouseover', () => {
+        icon.classList.toggle('resume-icon-mouseover');
+        resumeItemTitle.style.color = 'white';
+        resumeItemTitle.style.transform = 'translateY(-0.5em)';
+        resumeItemTitle.style.transition = 'transform 0.25s ease-in';
+    });
+
+    item1Btn.addEventListener('mouseout', () => {
+        icon.classList.toggle('resume-icon-mouseover');
+        resumeItemTitle.style.color = 'black';
+        resumeItemTitle.style.transform = 'translateY(0.5em)';
+        resumeItemTitle.style.transition = 'transform 0.1ms ease-in';
+    });
+};
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
     navSlide();
     resumeItemModal();
+    resumeItemInteraction();
 });

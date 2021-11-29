@@ -52,6 +52,7 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 1em;
 }
 
 [class*="resume-item"] {
@@ -73,15 +74,31 @@ h2 {
   min-width: 300px;
   height: 250px;
   font-size: 16px;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 5%;
   padding: 0.5em;
   margin: 0.25em;
+}
+
+[class*="resume-item"]:hover {
+  background-color: #111111;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
 }
 
 .resume-icon {
   display: block;
   height: 96px;
   width: 96px;
+}
+
+.resume-icon-mouseover {
+  -webkit-transform: scale(1.1) translateY(-1.5em);
+          transform: scale(1.1) translateY(-1.5em);
+  -webkit-transition: -webkit-transform 0.25s ease-in;
+  transition: -webkit-transform 0.25s ease-in;
+  transition: transform 0.25s ease-in;
+  transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
 }
 
 .modal-container {
@@ -110,14 +127,34 @@ h2 {
 
 .close-btn {
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #8a1e1e;
-  font-size: 32px;
+  font-size: 48px;
+  height: 48px;
+  width: 48px;
   font-weight: bold;
+  border: 2px solid black;
+  background-color: lightgray;
+  border-radius: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.close-btn img {
+  width: 36px;
+  height: 36px;
 }
 
 .close-btn:hover {
   color: red;
   cursor: pointer;
+  background-color: gray;
 }
 
 @-webkit-keyframes animatetop {
