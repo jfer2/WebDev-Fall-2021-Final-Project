@@ -36,10 +36,44 @@ p {
 
 h2 {
     text-align: center;
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(54, 54, 54);
     color: white;
     padding: 0.25em;
     border: 1px solid black;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+[class*="resume-item"] {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin: 0.25em;
+}
+
+
+.resume-icon {
+    display: block;
+    height: 64px;
+    width: 64px;
+}
+
+#about {
+    text-align: left;
+    // font-size: 20px;
 }
 
 #email {
@@ -54,11 +88,9 @@ h2 {
     // border-bottom: 1px solid silver;
     padding-bottom: 7em;
     padding-top: 2em;
-}
-
-[class*="project-item"] > h3, p {
     text-align: center;
 }
+
 
 [class*="project-item"] > p {
     font-size: 1.5em;

@@ -33,10 +33,59 @@ p {
 
 h2 {
   text-align: center;
-  background-color: #4d4d4d;
+  background-color: #363636;
   color: white;
   padding: 0.25em;
   border: 1px solid black;
+}
+
+.resume-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+[class*="resume-item"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  min-width: 300px;
+  height: auto;
+  font-size: 16px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid black;
+  padding: 0.5em;
+  margin: 0.25em;
+}
+
+.resume-icon {
+  display: block;
+  height: 64px;
+  width: 64px;
+}
+
+#about {
+  text-align: left;
 }
 
 #email {
@@ -59,9 +108,6 @@ h2 {
           align-items: center;
   padding-bottom: 7em;
   padding-top: 2em;
-}
-
-[class*="project-item"] > h3, p {
   text-align: center;
 }
 
