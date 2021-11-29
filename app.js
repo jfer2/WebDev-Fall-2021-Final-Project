@@ -27,48 +27,67 @@ const navSlide = () => {
     });
 };
 
-const resumeItemModal = () => {
-    const item1Btn = document.querySelector('.resume-item-1');
-    const longshoremanModal = document.querySelector('.modal-container');
-    let closeBtn = document.querySelector('.close-btn');
+const numResumeItems = 4;
 
-    item1Btn.addEventListener('click', () => {
-        longshoremanModal.style.display = 'block';
-        closeBtn.onclick = function() {
-            longshoremanModal.style.display = 'none';
-        }
-        window.onclick = function(e) {
-            if (e.target == longshoremanModal) {
-                longshoremanModal.style.display = 'none';
+const resumeItemModal = () => {
+    let resumeCard = [];
+    let modal = [];
+    let modalArea = [];
+    let closeBtn = [];
+
+
+    for (let i = 1; i <= numResumeItems; ++i) {
+        resumeCard[i] = document.querySelector(`.resume-item-${i}`);
+        modal[i] = document.querySelector(`.modal-container-${i}`);
+        modalArea[i] = document.querySelector(`.modal-area-${i}`);
+        closeBtn[i] = document.querySelector(`.close-btn-${i}`);
+
+        resumeCard[i].addEventListener('click', () => {
+            modal[i].style.display = 'block';
+            closeBtn[i].onclick = function() {
+                modal[i].style.display = 'none';
             }
-        }
-    });
+            window.onclick = function(e) {
+                if (e.target == modal[i]) {
+                    modal[i].style.display = 'none';
+                }
+            }
+        });
+    }
 };
 
 const resumeItemInteraction = () => {
-    const item1Btn = document.querySelector('.resume-item-1');
-    const icon = document.querySelector('#longeshoreman-icon');
-    const resumeItemTitle = document.querySelector('#resume-item-1-title');
 
-    item1Btn.addEventListener('mouseover', () => {
-        icon.classList.toggle('resume-icon-mouseover');
-        resumeItemTitle.style.color = 'white';
-        resumeItemTitle.style.transform = 'translateY(-0.5em)';
-        resumeItemTitle.style.transition = 'transform 0.25s ease-in';
-    });
+    let resumeCard = [];
+    let icon = [];
+    let resumeCardTitle = [];
 
-    item1Btn.addEventListener('mouseout', () => {
-        icon.classList.toggle('resume-icon-mouseover');
-        resumeItemTitle.style.color = 'black';
-        resumeItemTitle.style.transform = 'translateY(0.5em)';
-        resumeItemTitle.style.transition = 'transform 0.1ms ease-in';
-    });
+    for (let i = 1; i <= numResumeItems; ++i) {
+
+        resumeCard[i] = document.querySelector(`.resume-item-${i}`);
+        icon[i] = document.querySelector(`.resume-icon-${i}`);
+        resumeCardTitle[i] = document.querySelector(`.resume-title-${i}`);
+
+        resumeCard[i].addEventListener('mouseover', () => {
+            icon[i].classList.toggle('resume-icon-mouseover');
+            resumeCardTitle[i].style.color = 'white';
+            resumeCardTitle[i].style.transform = 'translateY(-0.5em)';
+            resumeCardTitle[i].style.transition = 'transform 0.25s ease-in';
+        });
+
+        resumeCard[i].addEventListener('mouseout', () => {
+            icon[i].classList.toggle('resume-icon-mouseover');
+            resumeCardTitle[i].style.color = 'black';
+            resumeCardTitle[i].style.transform = 'translateY(0.5em)';
+            resumeCardTitle[i].style.transition = 'transform 0.1ms ease-in';
+        });
+    }
 };
 
 
 
 document.addEventListener("DOMContentLoaded", () => {
     navSlide();
-    resumeItemModal();
     resumeItemInteraction();
+    resumeItemModal();
 });
