@@ -52,13 +52,13 @@ h2 {
 [class*="resume-item"] {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     width: 30%;
     min-width: 300px;
-    height: auto;
+    height: 250px;
     font-size: 16px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     border: 2px solid black;
     padding: 0.5em;
     margin: 0.25em;
@@ -67,8 +67,8 @@ h2 {
 
 .resume-icon {
     display: block;
-    height: 64px;
-    width: 64px;
+    height: 96px;
+    width: 96px;
 }
 
 #about {
