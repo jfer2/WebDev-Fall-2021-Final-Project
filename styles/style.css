@@ -373,6 +373,7 @@ h2 {
 }
 
 .content-item {
+  padding: 3em;
   margin-top: 2em;
   margin-left: 8em;
   margin-right: 8em;
@@ -390,6 +391,10 @@ h2 {
           flex-direction: column;
   height: auto;
   width: 100%;
+}
+
+form {
+  padding: 2em;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
