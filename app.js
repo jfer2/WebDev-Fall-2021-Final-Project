@@ -27,7 +27,27 @@ const navSlide = () => {
     });
 };
 
+const resumeItemModal = () => {
+    const item1Btn = document.querySelector('.resume-item-1');
+    const longshoremanModal = document.querySelector('.modal-container');
+    let closeBtn = document.querySelector('.close-btn');
+
+    item1Btn.addEventListener('click', () => {
+        longshoremanModal.style.display = 'block';
+        closeBtn.onclick = function() {
+            longshoremanModal.style.display = 'none';
+        }
+        window.onclick = function(e) {
+            if (e.target == longshoremanModal) {
+                longshoremanModal.style.display = 'none';
+            }
+        }
+    });
+};
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     navSlide();
+    resumeItemModal();
 });
