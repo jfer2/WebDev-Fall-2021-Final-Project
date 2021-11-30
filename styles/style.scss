@@ -143,7 +143,6 @@ h2 {
 
 #about {
     text-align: left;
-    // font-size: 20px;
 }
 
 #email {
@@ -155,7 +154,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border-bottom: 1px solid silver;
     padding-bottom: 7em;
     padding-top: 2em;
     text-align: center;
@@ -169,11 +167,10 @@ h2 {
 }
 
 #roguelike {
-    height: 400px;
-    width: 400px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-radius: 20%;
+    height: 450px;
+    width: 450px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 #appointment-book {
@@ -220,8 +217,8 @@ h2 {
 
 .git {
     margin-top: 1em;
-    height: 48px;
-    width: 48px;
+    height: 72px;
+    width: 72px;
 }
 
 .project-item-2 .git {
@@ -243,9 +240,6 @@ h2 {
     position: fixed;
     top: 0;
     margin: 0 auto;
-    // width: 56vw;
-    // padding-left: 22vw;
-    // padding-right: 22vw;
     width: 100%;
     padding-left: 22%;
     padding-right: 22%;;
@@ -343,25 +337,19 @@ form {
         padding-right: 50px;
     }
     .navbar {
-        // width: 86vw;
-        // padding-left: 8vw;
-        // padding-right: 8vw;
         width: 100%;
         padding-left: 8%;
         padding-right: 8%;
     }
     .wrapper {
-        // width: 86vw;
-        // padding-left: 7vw;
-        // padding-right: 7vw;
         width: 100%;
         padding-left: 7%;
         padding-right: 7%;
     }
 
     #roguelike {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -379,9 +367,6 @@ form {
     }
 
     .wrapper {
-        // width: 90vw;
-        // padding-left: 5vw;
-        // padding-right: 5vw;
         width: 100%;
         padding-left: 5%;
         padding-right: 5%;
@@ -398,7 +383,6 @@ form {
         margin: 0;
         margin-right: 6%;
         width: 3em;
-        // padding-right: 6%;
         height: auto;
         text-align: center;
 

@@ -1,4 +1,3 @@
-
 const navSlide = () => {
     const navMenu = document.querySelector('.nav-menu');
     const nav = document.querySelector('.nav-list');

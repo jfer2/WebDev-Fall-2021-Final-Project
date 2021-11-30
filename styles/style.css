@@ -211,11 +211,10 @@ h2 {
 }
 
 #roguelike {
-  height: 400px;
-  width: 400px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-radius: 20%;
+  height: 450px;
+  width: 450px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #appointment-book {
@@ -260,8 +259,8 @@ h2 {
 
 .git {
   margin-top: 1em;
-  height: 48px;
-  width: 48px;
+  height: 72px;
+  width: 72px;
 }
 
 .project-item-2 .git {
@@ -414,8 +413,8 @@ form {
     padding-right: 7%;
   }
   #roguelike {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
 }
 
